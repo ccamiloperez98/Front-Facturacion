@@ -1,0 +1,39 @@
+<body>
+  <h1 style="text-align: center;padding-top: 5%;">Bienvenido a Facturación</h1>
+  <div class="center">
+    <form [formGroup]="form" (ngSubmit)="onSave()" #formLogin="ngForm">
+      <table>
+        <tr>
+          <td>
+            <input class="form-control" type="number" placeholder="id cliente" formControlName="cliente">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="form-control" type="number" placeholder="id producto" formControlName="producto">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="form-control" type="number" placeholder="cantidad" formControlName="cantidad">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="form-control" type="number" placeholder="precio" formControlName="precio">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button type="button" class="btn btn-primary" type="submit"  style="width: 100%;" >Enviar</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+ 
+</body>
+
+
+
+
